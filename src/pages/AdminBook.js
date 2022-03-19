@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Container, Button, Row, Col, CardGroup, Input} from 'reactstrap'
 import { CardAdmin, ModalPage, Footer } from '../components'
-import './style.css'
+import './style.css';
 
 const AdminBook = () => {
   const [visibleNewBook, setVisibleNewBook] = useState(false)

@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Row, Col, Input, Button} from 'reactstrap';
 import { CardUser, Footer, Navbars } from '../components';
 
 const UserBook = () => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/books')
+      .then((response) => response.json())
+      .then((result) => setBooks(result))
+      .catch((err) => console.log(err))
+  },[]);
+  
   return (
     <Container>
         <Navbars />
@@ -16,12 +25,15 @@ const UserBook = () => {
             </Col>
         </Row>
         <Row xs={1} md={2} lg={3} className='mt-5 m-3 bg-light justify-content-center rounded pt-3 pb-4'>
-            <CardUser />
-            <CardUser />
-            <CardUser />
-            <CardUser />
-            <CardUser />
-            <CardUser />
+          { books.map((book) => (
+            <CardUser 
+            key={book.id}
+            title={book.title} 
+            desc={book.description} 
+            author={book.author} 
+            harga={book.harga} 
+            image={book.url} />
+          )) }
         </Row>
         <Footer />
     </Container>

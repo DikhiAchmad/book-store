@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavbarBrand,NavbarToggler ,Collapse, Navbar,Nav,NavItem, NavLink} from 'reactstrap';
 import './index.css';
-
+import {
+  Link
+} from "react-router-dom";
 const Navbars = () => {
     const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -21,12 +23,12 @@ const Navbars = () => {
         navbar
       >
         <NavItem>
-          <NavLink href="/components/" className='me-4 fw-bold text-blue'>
+          <NavLink tag={Link} to={"/"} className='me-4 fw-bold text-blue'>
             Home
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap" className='button-cherry px-3 rounded'>
+          <NavLink tag={Link} to={"admin"} className='button-cherry px-3 rounded'>
             console Admin
           </NavLink>
         </NavItem>

@@ -1,11 +1,11 @@
 import React from 'react'
 import {Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText, Badge} from 'reactstrap'
-const CardUser = () => {
+const CardUser = ({title, desc, author,harga,image}) => {
   return (
     <Card className='m-2 mt-4 p-3 border-0' style={{maxWidth: 320}}>
         <CardImg
             alt="Card image cap"
-            src="https://picsum.photos/318/180"
+            src={image}
             top
             width="100%"
             height='280px'
@@ -13,19 +13,19 @@ const CardUser = () => {
         />
         <CardBody>
             <Badge color="light" className='mb-2' style={{color: '#FF6565'}}>
-            Paijo
+            {author}
         </Badge>
         <CardTitle tag="h5">
-            Melangkah
+            {title}
         </CardTitle>
         <CardSubtitle
             className="mb-2 text-muted"
             tag="h6"
         >
-            Rp. 30.000
+            Rp. {harga}
         </CardSubtitle>
         <CardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            {desc}
         </CardText>
         </CardBody>
     </Card>
