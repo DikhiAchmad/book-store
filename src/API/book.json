@@ -3,9 +3,50 @@
     {
       "id": 1,
       "title": "book 1",
+      "description": "book 1 is very good",
       "author": "paijo",
-      "harga": 20000,
-      "url": "url"
+      "harga": 2000000,
+      "url": "https://i.picsum.photos/id/476/318/180.jpg?hmac=aow6yK-TyH6k7W1ehudu-toZvgnZJI4CYksRX7wT5do"
+    },
+    {
+      "id": 2,
+      "title": "book 2",
+      "description": "book 2 is very good",
+      "author": "tukiyem",
+      "harga": 3000000,
+      "url": "https://i.picsum.photos/id/768/318/180.jpg?hmac=ogz9GD7uUp2pjGWmOolO4E5myJzwclGl--Eu7jOACqM"
+    },
+    {
+      "id": 3,
+      "title": "book 3",
+      "description": "book 3 is very good",
+      "author": "sukirman",
+      "harga": 4000000,
+      "url": "https://i.picsum.photos/id/484/318/180.jpg?hmac=InuidNSzFraSgfb8vUT0KzbVWWNJDdggRi2TB-bHAzU"
+    },
+    {
+      "id": 5,
+      "title": "book 5",
+      "description": "book 5 is very good",
+      "author": "fa",
+      "harga": 2000000,
+      "url": "https://i.picsum.photos/id/476/318/180.jpg?hmac=aow6yK-TyH6k7W1ehudu-toZvgnZJI4CYksRX7wT5do"
+    },
+    {
+      "id": 6,
+      "title": "book 6",
+      "description": "halo book 6",
+      "author": "pal",
+      "harga": "60000",
+      "url": "https://i.picsum.photos/id/476/318/180.jpg?hmac=aow6yK-TyH6k7W1ehudu-toZvgnZJI4CYksRX7wT5do"
+    },
+    {
+      "id": 7,
+      "title": "book 7",
+      "description": "halo book 7",
+      "author": "dik",
+      "harga": "80000",
+      "url": "https://i.picsum.photos/id/476/318/180.jpg?hmac=aow6yK-TyH6k7W1ehudu-toZvgnZJI4CYksRX7wT5do"
     }
   ]
 }
