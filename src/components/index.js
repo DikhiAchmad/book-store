@@ -1,9 +1,5 @@
-import React from 'react'
+import CardAdmin from "./cards/cardAdmin";
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
+export {
+  CardAdmin
 }
-
-export default index
