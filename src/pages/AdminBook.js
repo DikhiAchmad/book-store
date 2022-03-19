@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Container, Button, Row, Col, CardGroup, Input} from 'reactstrap'
-import { CardAdmin, ModalPage } from '../components'
+import { CardAdmin, ModalPage, Footer } from '../components'
 import './style.css'
 
 const AdminBook = () => {
@@ -23,7 +23,7 @@ const AdminBook = () => {
             <Button className='border-0' style={{backgroundColor: '#FF6565'}}>Keluar</Button>
           </Col>
         </Row>
-        <Row xs={1} md={2} lg={3} className='mt-5 m-3 bg-light justify-content-center'>
+        <Row xs={1} md={2} lg={3} className='mt-5 m-3 bg-light justify-content-center rounded pt-3 pb-4'>
             <CardAdmin 
               author="naupal"
               title="js page"
@@ -46,6 +46,7 @@ const AdminBook = () => {
               onEdit={() => setVisibleEditBook(true)}
             />
         </Row>
+        <Footer />        
         <ModalPage 
           title="Tambah Buku"
           onHandleModal={handleModal}

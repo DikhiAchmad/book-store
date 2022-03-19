@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText, Button, Badge} from 'reactstrap'
+
 const CardAdmin = ({author, title, price, desc, onEdit}) => {
   const handleDelete = () => {
       let conf = window.confirm('Apakah anda yakin ingin menghapus buku ini?')
@@ -7,8 +8,9 @@ const CardAdmin = ({author, title, price, desc, onEdit}) => {
           alert('Anda berhasil menghapus')
       } 
   }
+  
   return (
-    <Card className='m-2 mt-4' style={{maxWidth: 320}}>
+    <Card className='m-2 mt-4 p-3 border-0' style={{maxWidth: 320}}>
         <CardImg
             alt="Card image cap"
             src="https://picsum.photos/318/180"
