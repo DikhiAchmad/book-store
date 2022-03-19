@@ -1,10 +1,10 @@
-import {AdminBook} from './pages'
+import {UserBook} from './pages'
 
 // buat router
 function App() {
   return (
     <div>
-      <AdminBook />
+      <UserBook />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import AdminBook from './AdminBook'
+import UserBook from './UserBook'
 
 export {
-    AdminBook
+    AdminBook,
+    UserBook
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import {Container, Button, Row, Col, CardGroup} from 'reactstrap'
-import { CardAdmin } from '../components'
+import {Container, Button, Row, Col} from 'reactstrap'
+import { CardAdmin, Footer } from '../components'
 
 const AdminBook = () => {
   return (
@@ -16,7 +16,7 @@ const AdminBook = () => {
             <Button className='border-0' style={{backgroundColor: '#FF6565'}}>Keluar</Button>
           </Col>
         </Row>
-        <Row xs={1} md={2} lg={3} className='mt-5 m-3 bg-light justify-content-center'>
+        <Row xs={1} md={2} lg={3} className='mt-5 m-3 bg-light justify-content-center rounded pt-3 pb-4'>
             <CardAdmin />
             <CardAdmin />
             <CardAdmin />
@@ -24,6 +24,7 @@ const AdminBook = () => {
             <CardAdmin />
             <CardAdmin />
         </Row>
+        <Footer />
     </Container>
   )
 }

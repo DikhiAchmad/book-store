@@ -1,6 +1,6 @@
 import React from 'react'
-import {Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText, Button, Badge} from 'reactstrap'
-const CardAdmin = () => {
+import {Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText, Badge} from 'reactstrap'
+const CardUser = () => {
   return (
     <Card className='m-2 mt-4 p-3 border-0' style={{maxWidth: 320}}>
         <CardImg
@@ -27,11 +27,9 @@ const CardAdmin = () => {
         <CardText>
             This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
         </CardText>
-        <Button className='border-0 w-100' style={{backgroundColor: '#FF6565'}}>Edit Buku</Button>
-        <Button className='border-0 w-100 mt-2' style={{backgroundColor: '#FF6565'}}>Hapus Buku</Button>
         </CardBody>
     </Card>
   )
 }
 
-export default CardAdmin
+export default CardUser
