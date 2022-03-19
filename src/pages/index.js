@@ -1,9 +1,5 @@
-import React from 'react'
+import AdminBook from './AdminBook'
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
+export {
+    AdminBook
 }
-
-export default index
